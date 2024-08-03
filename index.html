@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="input-section">
+                <label for="billAmount">Bill</label>
+                <input  type="number" id="billAmount" step="0.01" required>
+                
+                <label>Select Tip %</label>
+                <div class="tip-buttons">
+                    <button style="background-color: #00474B; color: white;" type="button" onclick="selectTip(5)">5%</button>
+                    <button style="background-color: #9FE8DF; color: #00474B;" type="button" onclick="selectTip(10)">10%</button>
+                    <button style="background-color: #00474B; color: white;"  type="button" onclick="selectTip(15)">15%</button>
+                    <button style="background-color: #00474B; color: white;"  type="button" onclick="selectTip(25)">25%</button>
+                    <button style="background-color: #00474B; color: white;"  type="button" onclick="selectTip(50)">50%</button>
+                    <button type="button" onclick="selectTip(40)">40%</button>
+                    <input type="number" id="tipPercentage" placeholder="Custom" step="1">
+                </div>
+                
+                <label for="peopleCount">Number of People:</label>
+                <input type="number" id="peopleCount" min="1" required>
+                
+                <button type="button" class="calculateTip-btn" onclick="calculateTip()">Calculate Tip</button>
+            </div>
+            
+            <div class="result-section">
+                <div class="amount-text" ">
+                    <div>
+                        <h2>Tip Amount</h2>
+                        <section class="person">/ person</section>
+                    </div>
+                    <p id="Amount">$0.00</p>
+                </div>
+                <div class="amount-text">
+                    <div>
+                        <h2>Total</h2>
+                        <section class="person">/ person</section>
+                    </div>
+                    <p id="Amount">$0.00</p>
+                </div>
+                <button type="button" class="reser-btn" onclick="resetCalculator()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
