@@ -116,11 +116,6 @@ body {
   color: #fff;
 }
 
-.result-section p {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #264653;
-}
 
 .result-section button {
   padding: 10px 20px;
@@ -135,7 +130,7 @@ body {
   background-color: #21867a;
 }
 
-#Amount {
+.amount {
   color: #26c2ae;
   font-size: 48px;
   margin-top: -16px;
